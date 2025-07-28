@@ -37,11 +37,11 @@
       border-radius: 50%;
     }
 
-    /* Título com flexbox para alinhar ícones e texto */
+    /* Título com flexbox para alinhar ícones e texto, sem espaçamento */
     .title-container {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 0; /* sem espaço entre elementos */
       flex-wrap: nowrap;
       white-space: nowrap;
       font-weight: 400;
@@ -54,14 +54,14 @@
       font-weight: 700;  /* negrito */
       font-style: italic; /* itálico */
       text-transform: lowercase;
-      margin-left: 5px;
-      margin-right: 5px;
+      margin-left: 0;
+      margin-right: 0;
       font-size: 2.2rem;
     }
 
-    /* Ícones decorativos */
     .decor {
       font-size: 1.6rem;
+      margin: 0; /* remove margem */
     }
 
     /* Parágrafos com ícones */
@@ -100,6 +100,9 @@
     /* Responsividade do título para celular */
     @media (max-width: 480px) {
       .title-container {
+        flex-wrap: wrap;      /* permite quebra de linha */
+        white-space: normal;  /* permite quebra natural */
+        justify-content: center;
         font-size: 1.4rem;
       }
       .encontreicamilla {
@@ -113,10 +116,7 @@
   <img src="2f836da9-aee4-41c5-a60f-73867efb8290.png" alt="Foto de perfil Camilla" class="profile-pic" />
   
   <h1 class="title-container">
-    <span class="decor">✨🌻✨</span>
-    <span>Bem-vindo ao</span>
-    <span class="encontreicamilla">encontreicamilla</span>
-    <span class="decor">✨🌻✨</span>
+    <span class="decor">✨🌻✨</span><span>Bem-vindo ao</span><span class="encontreicamilla">encontreicamilla</span><span class="decor">✨🌻✨</span>
   </h1>
 
   <p>🔒 Esta página é segura. 🛡️</p>
@@ -124,9 +124,5 @@
   <p class="line-break">✨ Clique abaixo para continuar ✨</p>
   
   <a href="https://beacons.ai/encontreicamilla" class="button" target="_blank" rel="noopener noreferrer">
-    Ir para @encontreicamilla ♥︎
-  </a>
-  
-  <footer>© 2025 Encontrei Camilla</footer>
-</body>
-</html>
+    Ir pa
+
