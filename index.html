@@ -3,168 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Encontrei Camilla</title>
-  
-  <!-- Importa a fonte Bellota -->
+  <title>Bem-vindo</title>
   <link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet" />
-  
   <style>
     body {
       margin: 0;
-      background-color: #12110e;
-      color: #d4af37;
-      font-family: 'Bellota', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Bellota', cursive;
+      background-color: #000;
+      color: #fff;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
       align-items: center;
-      min-height: 100vh;
-      text-align: center;
       padding: 20px;
     }
 
-    .profile-pic {
-      width: 100px;
-      height: 100px;
-      box-shadow: 0 0 100px 15px rgba(212, 175, 55, 0.5);
-      filter: drop-shadow(0 0 20px rgba(212, 175, 55, 8));
-      object-fit: cover;
-      margin-bottom: 15px;
-      border: none;
-      border-radius: 50%;
-    }
-
     h1 {
-      font-weight: 400;
-      font-size: 2.2rem;
-      margin-bottom: 0.3em;
-      line-height: 1.2;
-    }
-
-    h1 .encontreicamilla {
-      font-weight: 700;
-      font-style: italic;
-      text-transform: lowercase;
-      margin: 0 5px;
-    }
-
-    .decor {
-      font-size: 1.6rem;
-      margin: 0 6px;
-    }
-
-    p {
-      font-weight: 400;
-      font-size: 1.2rem;
-      margin-bottom: 0.6em;
-      max-width: 320px;
-      line-height: 1.6;
-    }
-
-    .line-break {
-      margin: 1em 0;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 14px 28px;
-      font-size: 1.2rem;
-      color: #12110e;
-      background-color: #d4af37;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 700;
-      transition: background-color 0.3s ease;
-      margin-top: 15px;
-    }
-
-    a.button:hover {
-      background-color: #b08f27;
-    }
-
-    .ou {
-      margin: 40px 0 10px;
-      font-size: 1.2rem;
+      margin-top: 40px;
+      font-size: 36px;
       font-weight: bold;
-      color: #d4af37;
     }
 
     .ebooks {
       display: flex;
       flex-direction: column;
+      gap: 40px;
+      margin-top: 40px;
       align-items: center;
-      gap: 30px;
-      margin-top: 20px;
     }
 
     .ebook {
-      max-width: 320px;
-      background-color: #1a1a1a;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+      background-color: #111;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* sombra igual à da foto de perfil */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 280px;
     }
 
     .ebook img {
       width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 12px;
+      max-width: 240px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* sombra suave na imagem */
     }
 
-    footer {
-      margin-top: 40px;
-      font-size: 0.8rem;
-      color: #888;
+    .botao {
+      background-color: #ffd700;
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .botao:hover {
+      background-color: #e6c200;
+    }
+
+    .ou {
+      margin: 30px 0;
+      font-size: 18px;
+      color: #ffd700; /* mesma cor dourada usada nos botões */
+      font-weight: bold;
     }
 
     @media (min-width: 768px) {
       .ebooks {
         flex-direction: row;
-        justify-content: center;
       }
     }
   </style>
 </head>
 <body>
-
-  <!-- Imagem de perfil -->
-  <img src="2f836da9-aee4-41c5-a60f-73867efb8290.png" alt="Foto de perfil Camilla" class="profile-pic" />
-
-  <h1>
-    <span class="decor">✨🌻✨</span>
-    Bem-vindo ao
-    <span class="encontreicamilla">encontreicamilla</span>
-    <span class="decor">✨🌻✨</span>
-  </h1>
-
-  <p>🔒 Esta página é segura. 🛡️</p>
-
-  <p class="line-break">✨ Clique abaixo para continuar ✨</p>
-
-  <!-- Botão para o Instagram -->
-  <a href="https://beacons.ai/encontreicamilla" class="button" target="_blank" rel="noopener noreferrer">
-    Ir para @encontreicamilla ♥︎
-  </a>
-
-  <!-- Texto "ou" -->
-  <div class="ou">ou</div>
-
-  <!-- Capas dos eBooks -->
+  <h1>Escolha seu eBook</h1>
   <div class="ebooks">
-    <!-- eBook 1 -->
     <div class="ebook">
-      <img src="https://github.com/encontreicamilla/encontreicamilla.github.io/blob/main/capa1.JPG?raw=true" alt="Capa do eBook 1" />
-      <a href="https://pay.kiwify.com.br/4P6XDSo" class="button" target="_blank">✨Comprar agora🎨🖌️</a>
+      <img src="https://github.com/encontreicamilla/encontreicamilla.github.io/raw/main/capa1.JPG" alt="Ebook 1" />
+      <a class="botao" href="LINK_DO_PRODUTO_1" target="_blank">Comprar agora</a>
     </div>
 
-    <!-- eBook 2 -->
+    <div class="ou">ou</div>
+
     <div class="ebook">
-      <img src="https://github.com/encontreicamilla/encontreicamilla.github.io/blob/main/capa2.JPG?raw=true" alt="Capa do eBook 2" />
-      <a href="https://pay.kiwify.com.br/RdzGr45" class="button" target="_blank">✨Comprar agora🎨🖌️</a>
+      <img src="https://github.com/encontreicamilla/encontreicamilla.github.io/raw/main/capa2.JPG" alt="Ebook 2" />
+      <a class="botao" href="LINK_DO_PRODUTO_2" target="_blank">Comprar agora</a>
     </div>
   </div>
-
-  <footer>© 2025 Encontrei Camilla</footer>
 </body>
 </html>
