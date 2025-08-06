@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Encontrei Camilla</title>
   
-  <!-- Importa a fonte Bellota -->
   <link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet" />
   
   <style>
@@ -16,47 +15,42 @@
       font-family: 'Bellota', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
       padding: 20px;
     }
 
-    /* Imagem de perfil */
     .profile-pic {
       width: 100px;
       height: 100px;
-      box-shadow:
-        0 0 100px 15px rgba(212, 175, 55, 0.5); /* sombra suave ao redor */
-
-  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 8)); /* brilho mais forte no centro */
+      box-shadow: 0 0 100px 15px rgba(212, 175, 55, 0.5);
+      filter: drop-shadow(0 0 20px rgba(212, 175, 55, 8));
       object-fit: cover;
       margin-bottom: 15px;
-      border: none;
-      opacity: 1;
-      Border-radius:50%
+      border-radius: 50%;
     }
-    /* Frase com estilos */
+
     h1 {
-      font-weight: 400; /* sem negrito */
+      font-weight: 400;
       font-size: 2.2rem;
       margin-bottom: 0.3em;
       line-height: 1.2;
     }
+
     h1 .encontreicamilla {
-      font-weight: 700;  /* negrito */
-      font-style: italic; /* itálico */
+      font-weight: 700;
+      font-style: italic;
       text-transform: lowercase;
-      margin-left: 5px;
-      margin-right: 5px;
+      margin: 0 5px;
     }
-    /* Ícones decorativos */
+
     .decor {
       font-size: 1.6rem;
       margin: 0 6px;
     }
-    /* Parágrafos com ícones */
+
     p {
       font-weight: 400;
       font-size: 1.2rem;
@@ -64,9 +58,7 @@
       max-width: 320px;
       line-height: 1.6;
     }
-    .line-break {
-      margin: 1em 0;
-    }
+
     a.button {
       display: inline-block;
       padding: 14px 28px;
@@ -79,19 +71,54 @@
       transition: background-color 0.3s ease;
       margin-top: 15px;
     }
+
     a.button:hover {
       background-color: #b08f27;
     }
+
+    .or {
+      margin: 30px 0 10px;
+      font-size: 1rem;
+      font-style: italic;
+      color: #ccc;
+    }
+
+    .products {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin-top: 10px;
+    }
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    }
+
     footer {
-      position: fixed;
-      bottom: 10px;
+      margin-top: 40px;
       font-size: 0.8rem;
       color: #888;
+    }
+
+    @media (min-width: 700px) {
+      .products {
+        flex-direction: row;
+        justify-content: center;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Sua foto de perfil enviada -->
   <img src="2f836da9-aee4-41c5-a60f-73867efb8290.png" alt="Foto de perfil Camilla" class="profile-pic" />
   
   <h1>
@@ -104,11 +131,29 @@
   <p>🔒 Esta página é segura. 🛡️</p>
 
   <p class="line-break">✨ Clique abaixo para continuar ✨</p>
-  
+
   <a href="https://beacons.ai/encontreicamilla" class="button" target="_blank" rel="noopener noreferrer">
     Ir para @encontreicamilla ♥︎
   </a>
-  
+
+  <div class="or">ou</div>
+
+  <div class="products">
+    <div class="product">
+      <img src="capa 1" alt="Ebook 1" />
+      <a href="https://pay.kiwify.com.br/4P6XDSo" class="button" target="_blank" rel="noopener noreferrer">
+        ✨Comprar Agora 🎨🖌️
+      </a>
+    </div>
+
+    <div class="product">
+      <img src="capa 2" alt="Ebook 2" />
+      <a href="https://pay.kiwify.com.br/RdzGr45" class="button" target="_blank" rel="noopener noreferrer">
+        ✨Comprar Agora 🎨🖌️
+      </a>
+    </div>
+  </div>
+
   <footer>© 2025 Encontrei Camilla</footer>
 </body>
 </html>
